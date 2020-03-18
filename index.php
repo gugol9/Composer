@@ -4,8 +4,11 @@
 
 require("vendor/autoload.php");
 
-use Imagine\Gd\Imagine;
 
-$Imagine = new Imagine();
+use  Imagine\Image\Box;
+$imagine = new Imagine\Gd\Imagine();
+$imagine = $imagine->open('Wiktor.jpeg');
 
-$test = new \Imagine\Gd\Test();
+$imagine->resize(new Box(15,25));
+
+$imagine->save('img/Wiktor.jpeg');

@@ -1,10 +1,4 @@
 {
-    "autoload": {
-        "psr-4": {
-            "Imagine\\": "application/Imagine"
-        }
-    
-    },
     "require":{
         "imagine/imagine": "~0.5.0"
     }
